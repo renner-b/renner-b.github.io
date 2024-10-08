@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="Website Icon" href="livro.png">
+    
+    <title>B&B Books</title>
+
+    <script>
+        
+        function toggleText(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+
+<header>
+    <div class="interface">
+        <div class="logo">
+            <a id="logo" href="#">
+                <img id="logo" src="logo.png" alt="img de livros">
+            </a>
+        </div>
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#resumo">Resumo</a></li>
+                <li><a href="#resenha">Resenha</a></li>
+            </ul>
+        </nav>
+
+        <div class="button-contato">
+            <a href="#formulario">
+                <button>Contato</button>
+            </a>
+        </div>
+
+    </div> 
+</header>  
+
+<body>
+    <div id="fundo">
+        <h1> B&B Books</h1>
+    </div>
+
+    <section id="resumo" class="s1">
+        <h1 class="titulo"> Quem Somos?</h1>
+        <br>
+        <br>
+
+        <div class="coluna dois">
+            <img class="fixed" src="blog.jpeg" width="120%" height="100%" alt="Livros" />
+        </div>
+
+        <div id="qmsomos" class="coluna dois">
+            <h1 class="centralizado"> A trajetória histórica da B&B </h1>
+            <br><br>
+            <p class="justificado ">
+                Olá, somos Bernardo Renner e Bebeto Chamorro, dois amigos que partilham uma grande paixão por livros. Decidimos criar este blog para trocar ideias sobre as obras que nos marcaram e, claro, para descobrir novos mundos literários com vocês! Aqui, vamos escrever resenhas, dar sugestões de leitura e também falar sobre aqueles autores menos conhecidos que merecem destaque. Cada livro é uma viagem, e queremos que vocês embarquem conosco! Fiquem à vontade para comentar e sugerir obras, porque o blog é tão nosso quanto vosso. Bora conversar sobre livros? 
+            </p>
+        </div>
+    </section>
+
+    <div>
+        <h1 id="resenha" class="titulo">Resenha de Livros</h1>
+    </div>
+
+    <section class="modelos esquerdo">
+        <!-- Revolução dos Bichos -->
+        <div class="item coluna dois">
+            <h2>Revolução dos Bichos</h2>
+            <br>
+            <img src="rev.jpg" alt="Revolução dos Bichos">
+            <button onclick="toggleText('revText')">Saiba mais!</button>
+        </div>
+
+        <div class="rev coluna dois" id="revText" style="display:none;">
+            <h2> Resenha</h2>
+            <br>
+            <p>Esta fábula política satírica retrata uma revolta de animais contra seus donos humanos em uma fazenda, com o objetivo de estabelecer uma sociedade igualitária. No entanto, à medida que o poder se concentra entre os líderes, especialmente o porco Napoleão, a utopia se transforma em uma ditadura corrupta, refletindo as traições das revoluções políticas, especialmente a Revolução Russa.</p>
+            <br>
+            <h4> Avaliação: 4.5/5 </h4>
+        </div>
+
+        <!-- Metamorfose -->
+        <div class="item coluna dois">
+            <h2>Metamorfose</h2>
+            <br>
+            <img src="meta.jpg" alt="Metamorfose">
+            <button onclick="toggleText('metaText')">Saiba mais!</button>
+        </div>
+
+        <div class="meta coluna dois" id="metaText" style="display:none;">
+            <h2> Resenha</h2>
+            <br>
+            <p>Neste conto angustiante, Gregor Samsa, um homem comum, acorda transformado em um inseto gigante. A história explora o isolamento, a alienação e a desumanização enquanto Gregor luta para lidar com sua nova condição, e sua família, que inicialmente demonstra compaixão, gradualmente o rejeita. A obra é uma reflexão sobre o sofrimento humano e a natureza da identidade.</p>
+            <br>
+            <h4> Avaliação: 4.3/5 </h4>
+        </div>
+
+        <!-- O Menino do Pijama Listrado -->
+        <div class="item coluna dois">
+            <h2>O Menino do Pijama Listrado</h2>
+            <br>
+            <img src="pijama.jpg" alt="O menino do pijama listrado">
+            <button onclick="toggleText('pijamaText')">Saiba mais!</button>
+        </div>
+
+        <div class="pijama coluna dois" id="pijamaText" style="display:none;">
+            <h2> Resenha</h2>
+            <br>
+            <p>O romance se passa durante a Segunda Guerra Mundial e narra a amizade improvável entre Bruno, o filho de um oficial nazista, e Shmuel, um menino judeu preso em um campo de concentração. A ingenuidade de Bruno contrasta com a dura realidade da guerra e do Holocausto, e o final trágico evidencia o impacto devastador do preconceito e da intolerância.</p>
+            <br>
+            <h4> Avaliação: 5/5 </h4>
+        </div>
+    </section>
+
+    <hr>
+
+    <div id="formulario">
+        <div>
+            <h2 class="titulo">NOS AJUDE A MELHORAR!</h2>
+
+            <form action="">
+                <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                <input type="text" name="" id="" placeholder="Seu celular:">
+                <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+            </form>
+        </div>
+    </div>
+
+    <ul class="gallery">
+        <li style="background: #f6bd60;"></li>
+        <li style="background: #f7ede2;"></li>
+        <li style="background: #f5cac3;"></li>
+        <li style="background: #84a59d;"></li>
+        <li style="background: #f28482;"></li>
+    </ul>
+</body>
+
+<footer>
+    <p>&copy; 2024 B&B Books. Todos os direitos reservados.</p>
+</footer>
+
+</html>
